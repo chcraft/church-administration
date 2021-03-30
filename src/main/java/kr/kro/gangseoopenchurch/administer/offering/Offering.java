@@ -1,7 +1,5 @@
 package kr.kro.gangseoopenchurch.administer.offering;
 
-import java.lang.reflect.Member;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import kr.kro.gangseoopenchurch.administer.members.Members;
 import lombok.Data;
 
 @Data
@@ -22,7 +21,7 @@ public class Offering {
 
 	@ManyToOne
 	@JoinColumn(name = "memberId")
-	Member member;
+	private Members member;
 
 	@ManyToOne
 	@JoinColumn(name = "offeringtypeId")

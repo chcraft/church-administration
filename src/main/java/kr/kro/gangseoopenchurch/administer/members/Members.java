@@ -1,4 +1,4 @@
-package kr.kro.gangseoopenchurch.administer.member;
+package kr.kro.gangseoopenchurch.administer.members;
 
 import java.sql.Date;
 
@@ -14,7 +14,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class Member {
+public class Members {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
